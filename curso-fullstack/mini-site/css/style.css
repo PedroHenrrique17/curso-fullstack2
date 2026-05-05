@@ -3,9 +3,18 @@
     padding: 0px;
     list-style: none;
 }
+
 body {
     background: #f5f5f5;
 }
+
+.contentMain {
+    margin: 0 auto;
+    /*Largura*/
+    max-width: 1000px;
+    width: 100%;
+}
+
 header {
     /*Tamanho altura*/
     height: 100px;
@@ -36,6 +45,7 @@ header h1 {
 header nav ul {
     display: flex;
 }
+
 header nav ul a {
     color: #fff;
     text-decoration: none;
@@ -48,3 +58,22 @@ header nav ul a:hover {
     color: orange;
 }
 
+/*Carrosel*/
+.carousel article {
+    margin-top: 20px;
+}
+
+.carousel img {
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+}
