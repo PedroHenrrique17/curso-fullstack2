@@ -69,6 +69,7 @@ header nav ul a:hover {
     width: 100%;
 }
 
+/*Cards*/
 .cards {
     display: flex;
     justify-content: space-around;
@@ -81,4 +82,28 @@ header nav ul a:hover {
     margin-bottom: 20px;
     border-radius: 10px;
     border: 1px solid grey;
+}
+
+/*Extra*/
+.extra {
+    background: #ddd;
+    padding: 30px;
+    text-align: center;
+
+}
+
+/*Footer*/
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/*Página Sobre*/
+.paginaSobre h1 {
+    color: #191970;
+    padding-top: 10px;
+    border: 1px solid red;
 }
