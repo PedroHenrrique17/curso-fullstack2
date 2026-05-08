@@ -1,6 +1,15 @@
-function minhaFuncao(){
-    alert("Minha função");
-    console.log("Sou Dev e você?");
-}
+let valor = 12;
 
-minhaFuncao();
+console.log("Agora vale", valor);
+
+valor = valor - 1
+
+console.log("Agora vale", valor);
+
+valor--;
+
+console.log("Agora vale", valor);
+
+valor -=10
+
+console.log("Agora vale", valor);
