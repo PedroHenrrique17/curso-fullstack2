@@ -1,0 +1,53 @@
+body {
+    background: rgb(167, 213, 240);
+}
+/* bloco pega a linha interira e line pega só uma parte */
+.form-group{
+    margin: 10px;
+}
+.form-group label {
+    color: rgb(0, 0, 0);
+    front-size: 20px;
+    width: 60px;
+    display: inline-block;
+}
+
+.btn-enviar {
+    background: rgb(81, 119, 190);
+    border: 0;
+    padding: 7px;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background: rgb(248, 248, 248);
+} 
+
+.btn-limpar{
+    background: rgb(81, 119, 190);
+    border: 0;
+    padding: 7px;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-limpar:hover {
+    background: white;
+}
+/* link css */
+.text-link{
+    text-decoration: none;
+    color: rgb(35, 18, 192);
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.fale-conosco {
+   background: rgb(86, 151, 236);
+   display: inline-block;
+}
