@@ -1,12 +1,12 @@
 const formulario = document.getElementById("form-cadastro")
 
 formulario.addEventListener("submit", function (event) {
-    event.preventDefault();
-
+    event.preventDefault()
 
     const nome = document.getElementById("nome")
     const telefone = document.getElementById("telefone")
     const email = document.getElementById("email")
+    
 
 
     console.log(nome.value)
@@ -33,8 +33,10 @@ formulario.addEventListener("submit", function (event) {
     nome.value = "";
     telefone.value = "";
     email.value = "";
-    checkbox.checked = false;
+    
 
     alert("Cadastro enviado!");
 
+
 })
+
