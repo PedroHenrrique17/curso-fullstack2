@@ -65,6 +65,23 @@ app.delete("/listaNomes/:id", (req, res) => {
     return res.send(`Nomes com id ${req.params.id} excluida com sucesso!`)
 });
 
+// Rota para alterar 
+app.put("/listaNomes/:id", (req, res) => {
+    let index = buscarIdMomes(req.params.id);
+
+    // se não encontrar, retornar erro
+    if (index === -1) {
+        return res.status(404).send(`Nenhum nome com id ${id} foi encontrado`);
+    }
+
+    nomes[index].nome = req.body.nome;
+    nomes[index].idade = req.body.idade;
+    nomes[index].casado = req.body.casado;
+
+    res.json(nomes);
+})
+
+
 app.listen(PORT, () => {
     console.log(`Servidor do projeto, rodando em http://localhost:${PORT}`)
 });
