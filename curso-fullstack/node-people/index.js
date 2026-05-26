@@ -17,6 +17,12 @@ function buscarNomePorID(id) {
     return nomes.filter((nome) => nome.id == id);
 }
 
+// Pegar a posição ou index do elemento do array por id
+function buscarIdMomes(id) {
+    // findIndex
+    return nomes.findIndex(nome => nome?.id == id);
+}
+
 //Rota principal
 app.get('/', (req, res) => {
     res.send("Seja bem vindo");
@@ -43,6 +49,20 @@ app.post("/listaNomes", (req, res) => {
     nomes.push(req.body)
     res.status(201).send('Nomes cadastrado com sucesso!');
 
+});
+
+app.delete("/listaNomes/:id", (req, res) => {
+    let id = req.params.id;
+    let index = buscarIdMomes(id);
+
+    // se não encontrar, retornar erro
+    if (index === -1) {
+        return res.status(404).send(`Nenhum nome com id ${id} foi encontrado`);
+    }
+
+    // splice
+    nomes.splice(index, 1);
+    return res.send(`Nomes com id ${req.params.id} excluida com sucesso!`)
 });
 
 app.listen(PORT, () => {
